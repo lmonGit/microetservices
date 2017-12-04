@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.sql.dataSource</param-name>
+        <param-value>jdbc/microetservices</param-value>
+    </context-param>
+    <!-- Le lancement du site peut se faire avec un welcome file dans le web.xml -->
+    
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>Controller.Accueil</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/accueil</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <servlet-class>Controller.Index</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Contact</servlet-name>
+        <servlet-class>Controller.Contact</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Services</servlet-name>
+        <servlet-class>Controller.Services</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Services</servlet-name>
+        <url-pattern>/services</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServicesEntreprise</servlet-name>
+        <servlet-class>Controller.ServicesEntreprise</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServicesEntreprise</servlet-name>
+        <url-pattern>/servicesEntreprise</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServicesParticulier</servlet-name>
+        <servlet-class>Controller.ServicesParticulier</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServicesParticulier</servlet-name>
+        <url-pattern>/servicesParticulier</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TarifsEntreprise</servlet-name>
+        <servlet-class>Controller.TarifsEntreprise</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TarifsEntreprise</servlet-name>
+        <url-pattern>/tarifsEntreprise</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TarifsParticulier</servlet-name>
+        <servlet-class>Controller.TarifsParticulier</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TarifsParticulier</servlet-name>
+        <url-pattern>/tarifsParticulier</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ArticleQuery</servlet-name>
+        <servlet-class>Controller.ArticleQuery</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ArticleQuery</servlet-name>
+        <url-pattern>/articleQuery</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Portfolio</servlet-name>
+        <servlet-class>Controller.Portfolio</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Portfolio</servlet-name>
+        <url-pattern>/portfolio</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Produits</servlet-name>
+        <servlet-class>Controller.Produits</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Produits</servlet-name>
+        <url-pattern>/produits</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Integration</servlet-name>
+        <servlet-class>Controller.Integration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Integration</servlet-name>
+        <url-pattern>/integration</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Peripheriques</servlet-name>
+        <servlet-class>Controller.Peripheriques</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Peripheriques</servlet-name>
+        <url-pattern>/peripheriques</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Systemes</servlet-name>
+        <servlet-class>Controller.Systemes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Systemes</servlet-name>
+        <url-pattern>/systemes</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Reseaux</servlet-name>
+        <servlet-class>Controller.Reseaux</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Reseaux</servlet-name>
+        <url-pattern>/reseaux</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Connectiques</servlet-name>
+        <servlet-class>Controller.Connectiques</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Connectiques</servlet-name>
+        <url-pattern>/connectiques</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Accessoires</servlet-name>
+        <servlet-class>Controller.Accessoires</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Accessoires</servlet-name>
+        <url-pattern>/accessoires</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Caddie</servlet-name>
+        <servlet-class>Controller.Caddie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Caddie</servlet-name>
+        <url-pattern>/caddie</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Commander</servlet-name>
+        <servlet-class>Controller.Commander</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Commander</servlet-name>
+        <url-pattern>/commander</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Confirmation</servlet-name>
+        <servlet-class>Controller.Confirmation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Confirmation</servlet-name>
+        <url-pattern>/confirmation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ControllerServlet</servlet-name>
+        <servlet-class>Controller.ControllerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControllerServlet</servlet-name>
+        <url-pattern>/controllerservlet</url-pattern>
+    </servlet-mapping>
+    
+
+
+
+
+
+    <!--    <resource-ref>
+        <description>Connect to microetservicesdatabase for microetservices application</description>
+        <res-ref-name>jdbc/microetservices</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>-->
+</web-app>

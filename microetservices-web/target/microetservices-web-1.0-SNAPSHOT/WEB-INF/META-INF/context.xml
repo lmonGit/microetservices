@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/microetservices" 
+              auth="Container"
+              type="javax.sql.DataSource" 
+              username="root" 
+              password="aB2kprX007"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://microetservices"
+              validationQuery="select 1"
+              removeAbandoned="true"
+              removeAbandonedTimeout="120"
+              logAbandoned="true"
+              maxWait="60"
+              maxActive="10" 
+              maxIdle="4"/>
+</Context>

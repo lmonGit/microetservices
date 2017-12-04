@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <!-- Le lancement du site peut se faire avec un welcome file dans le web.xml -->
+    
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/login.jsp</welcome-file>
+    </welcome-file-list>
+    <context-param>
+        <description>Chemin relatif vers les images des produits</description>
+        <param-name>cheminImagesProduits</param-name>
+        <param-value>ressources/produits/</param-value>
+    </context-param>
+    <context-param>
+        <description>Chemin relatif vers les images des catégories</description>
+        <param-name>cheminImagesCategories</param-name>
+        <param-value>ressources/categories/</param-value>
+    </context-param>
+    <context-param>
+        <description>Frais appliqués à toutes les commandes</description>
+        <param-name>frais</param-name>
+        <param-value>3.00</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>Controller.Accueil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/accueil</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Administration</servlet-name>
+        <servlet-class>fr.microetservices.web.Administration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Administration</servlet-name>
+        <url-pattern>/administration</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>FormulaireProduit</servlet-name>
+        <servlet-class>fr.microetservices.web.FormulaireProduit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormulaireProduit</servlet-name>
+        <url-pattern>/formulaireProduit</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>FormulaireClient</servlet-name>
+        <servlet-class>fr.microetservices.web.FormulaireClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormulaireClient</servlet-name>
+        <url-pattern>/formulaireClient</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>FormulaireCommande</servlet-name>
+        <servlet-class>fr.microetservices.web.FormulaireCommande</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormulaireCommande</servlet-name>
+        <url-pattern>/formulaireCommande</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Agence</servlet-name>
+        <servlet-class>Controller.Agence</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Agence</servlet-name>
+        <url-pattern>/agence</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Contact</servlet-name>
+        <servlet-class>Controller.Contact</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Horaires</servlet-name>
+        <servlet-class>Controller.Horaires</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Horaires</servlet-name>
+        <url-pattern>/horaires</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Services</servlet-name>
+        <servlet-class>Controller.Services</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Services</servlet-name>
+        <url-pattern>/services</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServicesEntreprise</servlet-name>
+        <servlet-class>Controller.ServicesEntreprise</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServicesEntreprise</servlet-name>
+        <url-pattern>/servicesEntreprise</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServicesParticulier</servlet-name>
+        <servlet-class>Controller.ServicesParticulier</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServicesParticulier</servlet-name>
+        <url-pattern>/servicesParticulier</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TarifsEntreprise</servlet-name>
+        <servlet-class>Controller.TarifsEntreprise</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TarifsEntreprise</servlet-name>
+        <url-pattern>/tarifsEntreprise</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TarifsParticulier</servlet-name>
+        <servlet-class>Controller.TarifsParticulier</servlet-class>
+    </servlet>   
+    <servlet-mapping>
+        <servlet-name>TarifsParticulier</servlet-name>
+        <url-pattern>/tarifsParticulier</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <description>
+		</description>
+        <display-name>ControleurServlet</display-name>
+        <servlet-name>ControleurServlet</servlet-name>
+        <servlet-class>Controller.ControleurServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControleurServlet</servlet-name>
+        <url-pattern>/controleurservlet</url-pattern>
+    </servlet-mapping>
+        
+    <servlet>
+        <servlet-name>ListNews</servlet-name>
+        <servlet-class>Controller.ListNews</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListNews</servlet-name>
+        <url-pattern>/listNews</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>PostMessage</servlet-name>
+        <servlet-class>Controller.PostMessage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostMessage</servlet-name>
+        <url-pattern>/postmessage</url-pattern>
+    </servlet-mapping>
+     
+     
+     
+</web-app>
